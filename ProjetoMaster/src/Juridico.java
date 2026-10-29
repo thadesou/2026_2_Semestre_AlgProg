@@ -2,7 +2,6 @@ public class Juridico extends Cliente {
     public String cnpj;
 
     public Juridico() {
-        ;
 
         super();
 
