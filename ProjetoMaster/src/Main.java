@@ -18,16 +18,25 @@ public class Main {
         int tipoCliente = Integer.parseInt(JOptionPane.showInputDialog(txt));
 
         Cliente cliente = null;
-        String nome = JOptionPane.showInputDialog("Nome do cliente: ");
+        // String nome = JOptionPane.showInputDialog("Nome do cliente: ");
         if (tipoCliente == 1){
-            String cpf = JOptionPane.showInputDialog("CPF: ");
-            cliente = new Fisico(nome, cpf);
+        //     String cpf = JOptionPane.showInputDialog("CPF: ");
+            cliente = new Fisico();
         } else {
-            String cnpj = JOptionPane.showInputDialog("CNPJ: ");
-            cliente = new Juridico(nome, cnpj);
+        //    String cnpj = JOptionPane.showInputDialog("CNPJ: ");
+            cliente = new Juridico();
         }
+        cliente.cadastrar();
 
-        Conta c1 = new Conta();
+        txt = "Qual tipo de conta: \n(1) Poupança\n(2) Corrente";
+        int tipoConta = Integer.parseInt(JOptionPane.showInputDialog(txt));
+
+        Conta c1 = null;
+
+        if (tipoConta == 1)
+            c1 = new Poupanca();
+        } else c1 = new Corrente();
+
         c1.titular = cliente;
 
         int op = -1;
