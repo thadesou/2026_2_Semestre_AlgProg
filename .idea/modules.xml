@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/2026_2_Semestre_AlgProg.iml" filepath="$PROJECT_DIR$/.idea/2026_2_Semestre_AlgProg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula_Array/Aula_Array.iml" filepath="$PROJECT_DIR$/Aula_Array/Aula_Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula_Array2/Aula_Array2.iml" filepath="$PROJECT_DIR$/Aula_Array2/Aula_Array2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula_Array3/Aula_Array3.iml" filepath="$PROJECT_DIR$/Aula_Array3/Aula_Array3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula_Matriz/Aula_Matriz.iml" filepath="$PROJECT_DIR$/Aula_Matriz/Aula_Matriz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concessionaria/Concessionaria.iml" filepath="$PROJECT_DIR$/Concessionaria/Concessionaria.iml" />
+    </modules>
+  </component>
+</project>
