@@ -6,14 +6,19 @@ public class Main {
         String txt = "1) Adicionar Produto \n";
         txt += "2) Imprimir Lista \n";
         txt += "3) Remover último \n";
+        txt += "4) Buscar item pela posição \n";
         txt += "0) Sair \n\n";
         txt += "Digite sua opção: ";
-
-        String resposta = JOptionPane.showInputDialog(txt);
-        if(resposta.isEmpty()){
+        try {
+            String resposta = JOptionPane.showInputDialog(txt);
+            if (resposta.isEmpty()) {
+                return -1;
+            }
+            return Integer.parseInt(resposta);
+        } catch (Exception e){
+            JOptionPane.showMessageDialog(null, e.toString());
             return -1;
         }
-        return Integer.parseInt(resposta);
     }
 
     public static void main(String[] args) {
@@ -39,6 +44,13 @@ public class Main {
 
                 case 3:
                     listProd.produtos.removeLast();
+                    break;
+
+                case 4:
+                    int posicao = Integer.parseInt(JOptionPane.showInputDialog("Qual a posição?"));
+                    Produto p = listProd.getProdutoByPosicao(posicao);
+                    if (p != null)
+                    JOptionPane.showMessageDialog(null,p.toString());
                     break;
 
                 case 0:

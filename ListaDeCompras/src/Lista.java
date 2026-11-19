@@ -26,4 +26,17 @@ public class Lista {
         }
         JOptionPane.showMessageDialog(null, txt);
     }
+
+    public Produto getProdutoByPosicao(int posicao) {
+        try {
+            return this.produtos.get(posicao);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.toString());
+            return null;
+
+
+        }
+    }
+
+
 }
